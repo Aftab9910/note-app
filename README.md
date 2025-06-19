@@ -1,49 +1,50 @@
-# Svelte Notes App
+# Note Svelte Backend
 
-A simple note-tracking application built with Svelte.
+This is the backend service for the Note Tracker application, built to support the Svelte frontend. It provides RESTful APIs for managing notes.
 
 ## Features
 
-- Create, edit, and delete notes
-- Responsive and user-friendly interface
-- Local storage support for saving notes
+- Create, read, update, and delete notes
+- Simple and lightweight API
+- Designed to work seamlessly with the Svelte frontend
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- Node.js (v14 or higher)
+- npm or yarn
 
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/svelte-notes-app.git
-cd svelte-notes-app
+git clone https://github.com/yourusername/note-sevelte-backend.git
+cd note-sevelte-backend
 npm install
 ```
 
-### Running the App
+### Running the Server
 
 ```bash
-npm run dev
+npm start
 ```
 
-Open [http://localhost:5173](http://localhost:5173) to view the app in your browser.
+The server will start on `http://localhost:3000` by default.
 
-## Project Structure
+## API Endpoints
 
-```
-svelte-notes-app/
-├── public/
-├── src/
-│   ├── components/
-│   ├── routes/
-│   └── App.svelte
-├── package.json
-└── README.md
-```
+| Method | Endpoint      | Description           |
+|--------|--------------|-----------------------|
+| GET    | /notes       | Get all notes         |
+| GET    | /notes/:id   | Get a note by ID      |
+| POST   | /notes       | Create a new note     |
+| PUT    | /notes/:id   | Update a note by ID   |
+| DELETE | /notes/:id   | Delete a note by ID   |
 
 ## License
 
-This project is licensed under the MIT License.
+MIT
+
+## Author
+
+[Your Name]
